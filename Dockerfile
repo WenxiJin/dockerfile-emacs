@@ -13,6 +13,6 @@ run TMP_DIR=$(mktemp -d) && \
     make -j 8 install && \
     rm -rf $TMP_DIR
 
-workdir /files
+# workdir /files
 
-#entrypoint ["emacs"]
+# entrypoint ["emacs"]
