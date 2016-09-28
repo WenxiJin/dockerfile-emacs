@@ -5,6 +5,7 @@ run apt-get update && \
     apt-get build-dep -y emacs24
 
 env EMACS_VERSION="24.5"
+
 run TMP_DIR=$(mktemp -d) && \
     curl -sSL -o $TMP_DIR/emacs.tar.xz http://ftpmirror.gnu.org/emacs/emacs-$EMACS_VERSION.tar.xz && \
     tar -xJ -C $TMP_DIR -f $TMP_DIR/emacs.tar.xz && \
